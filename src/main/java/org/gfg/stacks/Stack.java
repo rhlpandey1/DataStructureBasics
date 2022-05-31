@@ -1,9 +1,9 @@
 package org.gfg.stacks;
 
 public class Stack {
-    static final int MAX=1000;
-    int top;
-    int[] a=new int[MAX];
+        static final int MAX=1000;
+        int top;
+        int[] a=new int[MAX];
     Stack(){
         top=-1;
     }

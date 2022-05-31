@@ -11,18 +11,18 @@ public class ReverseLinkedList {
             next=null;
         }
     }
-    Node reverseList(Node node){
+    Node reverseList(Node head){
         Node prev=null;
-        Node current=node;
-        Node next=null;
+        Node current=head;
+        Node next;
         while(current!=null){
             next=current.next;
             current.next=prev;
             prev=current;
             current=next;
         }
-        node=prev;
-        return node;
+        head=prev;
+        return head;
     }
     void printList(Node node)
     {
